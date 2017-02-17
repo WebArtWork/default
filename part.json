@@ -1,0 +1,12 @@
+{
+	"name": "CNAME",
+	"router": [{
+		"name": "Basic",
+		"src": "router.js"
+	},{
+		"name": "Crud",
+		"src": "crud.js"
+	}],
+	"dependencies": {
+	}
+}
