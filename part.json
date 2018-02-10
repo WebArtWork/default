@@ -3,10 +3,16 @@
 	"router": [{
 		"name": "Basic",
 		"src": "router.js"
-	},{
-		"name": "Crud",
-		"src": "crud.js"
 	}],
 	"dependencies": {
+	},
+	"crud": {
+		"updatesAll": [{
+			"keys": ["name","description"],
+			"name": ""
+		}], "updates": [{
+			"keys": ["name","description"],
+			"name": ""
+		}]
 	}
 }
