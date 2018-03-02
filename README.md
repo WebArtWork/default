@@ -11,5 +11,6 @@ Here we have the collection define for mongodb. If you use waw crud, you should 
 ## router.js
 In this file you start to write your own REST API, which will start with /api/NAME.<br>
 Waw crud configuration continue here, permision for each update, create, remove and get<br>
+Everything what is in commends, code can be uncomment and modified. All those code are like that by default.
 
 ## waw crud
