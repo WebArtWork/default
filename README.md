@@ -1,7 +1,7 @@
 # waw CNAME part
 
 ## part.json
-# Field `name`
+### Field `name`
 is used in waw crud to define sd.CNAME and other crud options like base for update, get etc.<br>
 ### Field `dependencies`
 is exactly the same dependencies which was in package.json. All those modules which will be definded there, will be installed in root folder into node_modules.<br>
