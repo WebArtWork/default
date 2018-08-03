@@ -26,6 +26,8 @@ Waw crud configuration continue here, permision for each update, create, remove 
 Everything what is in commends, code can be uncomment and modified. All those code are like that by default.
 
 ## waw crud
+Below you can see the default configuration of security which you can modify by pasting the functions inside your `router.js` file. Names which are optional, you can add inside arrays of `part.json` file.
+
 ## /api/NAME/create
 sd['ensure_create_NAME'] = function(req, res, next){
 	if(req.user) next();
@@ -108,7 +110,7 @@ sd['query_update_all_NAME'] = function(req, res){
 	};
 };
 ```
-### ustom Update All Route Management with name 'all'
+### custom Update All Route Management with name 'all'
 ```
 sd['ensure_update_all_NAME_author'] = function(req, res, next){
 	next();
