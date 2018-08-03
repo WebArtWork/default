@@ -26,14 +26,14 @@ Waw crud configuration continue here, permision for each update, create, remove 
 Everything what is in commends, code can be uncomment and modified. All those code are like that by default.
 
 ## waw crud
-##/api/NAME/create
+## /api/NAME/create
 sd['ensure_create_NAME'] = function(req, res, next){
 	if(req.user) next();
 	else res.json(false);
 };
 
-##/api/NAME/get
-###Default Get Route Management
+## /api/NAME/get
+### Default Get Route Management
 ```
 sd['ensure_get_NAME'] = function(req, res, next){
 	next();
@@ -59,7 +59,7 @@ sd['query_get_NAME'] = function(req, res){
 	}
 };
 ```
-###Custom Get Route Management with name 'all'
+### Custom Get Route Management with name 'all'
 ```
 sd['ensure_get_NAME_all'] = function(req, res, next){
 	next();
@@ -83,7 +83,7 @@ sd['query_get_NAME_all'] = function(req, res){
 	return {};
 };
 ```
-##/api/NAME/update
+## /api/NAME/update
 ```
 sd['ensure_update_NAME'] = function(req, res, next){
 	next();
@@ -95,8 +95,8 @@ sd['query_update_NAME'] = function(req, res){
 	};
 };
 ```
-##/api/NAME/update/all
-###Default Update All Route Management
+## /api/NAME/update/all
+### Default Update All Route Management
 ```
 sd['ensure_update_all_NAME'] = function(req, res, next){
 	next();
@@ -108,7 +108,7 @@ sd['query_update_all_NAME'] = function(req, res){
 	};
 };
 ```
-###Custom Update All Route Management with name 'all'
+### ustom Update All Route Management with name 'all'
 ```
 sd['ensure_update_all_NAME_author'] = function(req, res, next){
 	next();
@@ -120,7 +120,7 @@ sd['query_update_all_NAME_author'] = function(req, res){
 	};
 };
 ```
-##/api/NAME/unique/field
+## /api/NAME/unique/field
 ```
 sd['ensure_unique_field_NAME'] = function(req, res, next){
 	next();
@@ -131,7 +131,7 @@ sd['search_query_unique_field_NAME'] = function(req, res, update){
 	return query;
 };
 ```
-##/api/NAME/delete
+## /api/NAME/delete
 ```
 sd['ensure_delete_NAME'] = function(req, res, next){
 	if(req.user) next();
