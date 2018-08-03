@@ -34,6 +34,7 @@ sd['ensure_create_NAME'] = function(req, res, next){
 
 ##/api/NAME/get
 ###Default Get Route Management
+```
 sd['ensure_get_NAME'] = function(req, res, next){
 	next();
 };
@@ -57,7 +58,9 @@ sd['query_get_NAME'] = function(req, res){
 		moderators: req.user._id
 	}
 };
+```
 ###Custom Get Route Management with name 'all'
+```
 sd['ensure_get_NAME_all'] = function(req, res, next){
 	next();
 };
@@ -79,7 +82,9 @@ sd['select_get_NAME_all'] = function(req, res){
 sd['query_get_NAME_all'] = function(req, res){
 	return {};
 };
+```
 ##/api/NAME/update
+```
 sd['ensure_update_NAME'] = function(req, res, next){
 	next();
 };
@@ -89,8 +94,10 @@ sd['query_update_NAME'] = function(req, res){
 		moderators: req.user._id
 	};
 };
+```
 ##/api/NAME/update/all
 ###Default Update All Route Management
+```
 sd['ensure_update_all_NAME'] = function(req, res, next){
 	next();
 };
@@ -100,7 +107,9 @@ sd['query_update_all_NAME'] = function(req, res){
 		moderators: req.user._id
 	};
 };
+```
 ###Custom Update All Route Management with name 'all'
+```
 sd['ensure_update_all_NAME_author'] = function(req, res, next){
 	next();
 };
@@ -110,8 +119,9 @@ sd['query_update_all_NAME_author'] = function(req, res){
 		moderators: req.user._id
 	};
 };
-
+```
 ##/api/NAME/unique/field
+```
 sd['ensure_unique_field_NAME'] = function(req, res, next){
 	next();
 };
@@ -120,8 +130,9 @@ sd['search_query_unique_field_NAME'] = function(req, res, update){
 	query[update.key] = req.body[update.key];
 	return query;
 };
-
+```
 ##/api/NAME/delete
+```
 sd['ensure_delete_NAME'] = function(req, res, next){
 	if(req.user) next();
 	else res.json(false);
@@ -132,3 +143,4 @@ sd['delete_NAME'] = function(req, res){
 		author: req.user._id
 	}
 }
+```
